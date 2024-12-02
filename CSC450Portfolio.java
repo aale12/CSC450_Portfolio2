@@ -6,13 +6,10 @@ public class CSC450Portfolio {
         System.out.println("Hello World!");
         int countUpLim = 20;
         int countDownLim = 20;
-
         System.out.println("Beginning Count...");
-
         // creating threads for counting
         Thread countUpThread = new Thread(() -> countUp(countUpLim));
         Thread countDownThread = new Thread(() -> countDown(countDownLim));
-
         // start counting up
         countUpThread.start();
 
